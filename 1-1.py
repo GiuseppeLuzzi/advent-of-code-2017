@@ -5,7 +5,7 @@
 #	https://github.com/GiuseppeLuzzi/advent-of-code-2017
 #
 
-with open('inputs/1-1.txt', 'r') as input_file:
+with open('inputs/1.txt', 'r') as input_file:
     content = input_file.read()
 
 result		= 0
