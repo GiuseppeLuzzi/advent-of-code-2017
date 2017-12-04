@@ -12,6 +12,14 @@ with open('inputs/4.txt', 'r') as input_file:
 counter = 0;
 for row in rows:
 	row = row.rstrip('\n')
-	if len(set(row.split(' '))) != len(row.split(' ')):
-		counter += 1
-print("Valid passphares: ", len(rows) - counter)
+	if len(set(row.split(' '))) == len(row.split(' ')):
+
+		words = []
+		for word in row.split(' '):
+			word = list(word)
+			word.sort()
+			words.append(''.join(word))
+		if (len(set(words)) == len(words)):
+			counter += 1
+
+print("Valid passphares: ", counter)
