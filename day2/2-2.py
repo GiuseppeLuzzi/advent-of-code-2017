@@ -15,11 +15,11 @@ def find(row):
 
 
 checksum = 0
-with open('inputs/2.txt', 'r') as input_file:
+with open('input.txt', 'r') as input_file:
 	rows = input_file.readlines()
 
 for row in rows:
 	row = row.split('\t')
 	checksum = checksum + find(row)
 
-print("Checksum: ", int(checksum))
+print("Checksum: %d" % (int(checksum)))

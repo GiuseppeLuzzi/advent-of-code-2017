@@ -7,7 +7,7 @@
 
 checksum = 0
 
-with open('inputs/2.txt', 'r') as input_file:
+with open('input.txt', 'r') as input_file:
 	rows = input_file.readlines()
 
 for row in rows:
@@ -21,4 +21,4 @@ for row in rows:
 			row_max = int(element)
 	checksum = checksum + (row_max-row_min)
 
-print("Checksum: ", checksum)
+print("Checksum: %d" % (checksum))

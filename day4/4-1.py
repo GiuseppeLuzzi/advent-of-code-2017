@@ -6,12 +6,12 @@
 #
 
 
-with open('inputs/4.txt', 'r') as input_file:
+with open('input.txt', 'r') as input_file:
 	rows = input_file.readlines()
 
 counter = 0;
 for row in rows:
 	row = row.rstrip('\n')
-	if len(set(row.split(' '))) != len(row.split(' ')):
+	if len(set(row.split(' '))) == len(row.split(' ')):
 		counter += 1
-print("Valid passphares: ", len(rows) - counter)
+print("Valid passphares: %d" % (counter))
